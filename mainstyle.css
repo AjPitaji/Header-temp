@@ -1,0 +1,316 @@
+#mobile-navbar {
+    visibility: hidden;
+}
+
+.contact {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    background: #000000;
+}
+
+.number {
+    position: absolute;
+    width: 449px;
+    height: 24px;
+    left: 45%;
+    top: 13px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.email {
+    position: absolute;
+    width: 188px;
+    height: 29px;
+    left: 66%;
+    top: 8px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.address {
+    position: absolute;
+    width: 425px;
+    height: 48px;
+    left: 77%;
+    top: 0px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.nav-child {
+    position: absolute;
+    width: 1920px;
+    height: 100px;
+    left: 0px;
+    top: 100px;
+    position: fixed;
+
+    background: #FAFF00;
+}
+
+.nav-child img {
+    position: absolute;
+    width: 295px;
+    height: 62px;
+    left: 73px;
+    top: 19px;
+}
+
+.nav-main {
+    position: absolute;
+    width: 1888px;
+    height: 75px;
+    left: 432px;
+    top: 25px;
+
+    background: #FFFFFF;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.hamburger {
+    display: block;
+    width: 40px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    float: right;
+    margin-top: 4px;
+
+}
+
+.search {
+    display: block;
+    width: 40px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    float: right;
+    margin-top: 10px;
+    padding-right: 50px;
+}
+
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.desktop-menu a {
+    padding: 50px;
+    position: relative;
+    top: 24px;
+    left: 100px;
+    text-decoration: none;
+    font-style: normal;
+    color: #000000;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: inline;
+    align-items: center;
+    text-align: center;
+}
+
+.desktop-menu a:hover {
+    text-decoration: underline;
+    color: #FAFF00;
+}
+
+.searchbar {
+    position: absolute;
+    width: 389px;
+    height: 50px;
+    left: 849px;
+    top: 12px;
+
+    background: #DFDFDF;
+    border-radius: 10px;
+}
+
+.searchbar button {
+    position: absolute;
+    width: 66px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+
+    background: #FFD700;
+}
+
+.searchbar input {
+    height: 100%;
+    width: 323px;
+    position: relative;
+    left: 65px;
+    background-color: #DFDFDF;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+}
+
+/* whatsapp button */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+/* whatsapp button ends */
+.contact {
+    align-items: flex-end;
+}
+
+/* adjustments for desktop view */
+/* .contact-content{
+    float: right;
+    padding: 200px;
+} */
+@media only screen and (max-width: 600px) {
+    #navbar {
+        visibility: hidden;
+    }
+
+    #mobile-navbar {
+        visibility: visible;
+    }
+}
+
+#mobile-navbar .container {
+
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFD700;
+}
+
+.container img {
+    position: absolute;
+    width: 95.16px;
+    height: 20px;
+    left: 6px;
+    top: 15px;
+}
+
+.hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: -98;
+    background-color: white;
+    padding-top: 120px;
+    left: 100%;
+    transition: 0.4s;
+}
+
+.mobile-nav a {
+    display: block;
+    margin: 0 auto 16px;
+    width: fit-content;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #000;
+    font-size: xx-large;
+    padding-bottom: 45px;
+
+
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a:hover {
+    text-decoration: underline;
+    color: #FAFF00;
+}
+
+.search-text {
+    position: fixed;
+    display: block;
+    z-index: 2;
+    width: 320px;
+    height: 30px;
+    background: grey;
+    border-radius: 10px;
+    top: 51px;
+    left: 150px;
+    transition: .5s;
+    opacity: 0;
+}
+.search-text.is-active{
+    opacity: 1;
+}
